@@ -61,7 +61,7 @@ const login = async () => {
     console.log("登录成功，获取到了访问令牌！", token);
     localStorage.setItem('access_token', token);
     // 登录成功后跳转到主页（示例）
-    router.push('/layout');
+    router.push('/layout/codePr');
   } catch (error) {
     console.log("登录失败: ", error.message);
     alert(error.message);
